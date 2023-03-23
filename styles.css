@@ -64,7 +64,9 @@ h2 {
     background-image: url("images/hero.jpg");
     background-size: cover;
     background-position: center top;
-    height: 800px;
+    min-height: 800px;
+
+    padding-bottom:  46px;
       
 }
 
@@ -441,11 +443,7 @@ font-weight: 400;
         width: 90%
     }
 
-    .header-background {
-        
-        min-height: 850px;
-        padding-bottom: 50px;
-    }
+    
 
     h1 {
         font-size: 48px;
@@ -456,9 +454,7 @@ font-weight: 400;
         max-width: 36%;
     }
 
-    .header {
-        margin-bottom: 40px;
-    }
+   
 
 
 
