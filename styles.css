@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 .allcontent {
     max-width: 1024px;
     margin:auto;
+    padding: 0 12px;
 }
 
 :root {
@@ -27,6 +32,7 @@ h1 {
     font-weight: 400;
     margin:40px 0;
     line-height: 1.2;
+    width: 40%;
 }
 
 .header__button {
@@ -76,7 +82,7 @@ nav {
 }
 
 nav a:first-child{
-    margin-right: 50px;
+    margin-right: 18px;
 }
 
 nav a {
@@ -189,6 +195,7 @@ h3 {
 
  form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -237,8 +244,9 @@ p {
   }
 
 .reviews__entries {
-    width: 600px;
+    max-width: 600px;
     margin: auto;
+    
 }
 
 
@@ -253,7 +261,7 @@ h4 {
     border-bottom-style: solid ;
     border-bottom-width: 1px;
     border-bottom-color: #d6d3d1;
-    padding:24px 0;
+    padding:24px 12px;
 }
 
 .reviews__entry:last-child{
@@ -366,6 +374,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    height: 150px;
     
 
     padding: 64px;
@@ -403,4 +413,57 @@ font-weight: 400;
 
 .email {
     color:var(--grey-text)
+}
+
+@media (max-width: 600px) {
+
+    .perks, .description-picture, .pricing__plans, form, footer {
+        flex-direction: column;
+    
+
+    }
+
+    footer {
+        justify-content: space-evenly;
+    }
+
+    header, 
+
+    nav {
+        flex-wrap: wrap;
+       
+    }
+    nav * {
+        width: 50%;
+    }
+
+    form > input, form > button {
+        width: 90%
+    }
+
+    .header-background {
+        
+        min-height: 850px;
+        padding-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 48px;
+        max-width: 60%;
+    }
+
+    .header__p {
+        max-width: 36%;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+
+
+    
+
+
+    
 }
