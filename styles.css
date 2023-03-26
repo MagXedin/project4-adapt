@@ -33,6 +33,7 @@ h1 {
     margin:40px 0;
     line-height: 1.2;
     width: 40%;
+    color:#57534E ;
 }
 
 .header__button {
@@ -67,12 +68,17 @@ h2 {
     min-height: 800px;
 
     padding-bottom:  46px;
+    position: relative;
       
 }
 
 .header {
-   
+    position: relative;
 }
+
+
+
+
 
 
 
@@ -131,7 +137,7 @@ nav a:hover {
 }
 
 .perk {
-    background-color: #d6d3d1;
+    background-color: #F5F5F4;
     margin: 10px;
     padding: 20px;
     
@@ -202,16 +208,17 @@ h3 {
     align-items: center;
     margin: auto;
     margin-top: 60px;
+    gap: 10px;
  }
 
  input {
     padding: 14px;
-    margin: 6px;
+    
     border-radius: 6px;
     box-shadow: none;
     border: solid;
     border-width: 1px;
-    border-color: #78716C;
+    border-color: #D6D3D1;
     font-size: 20px;
  }
 
@@ -393,10 +400,14 @@ footer {
     color: var(--dark-orange);
 }
 
-.fa-brands{
+.fa-brands {
     margin-right: 6px;
 
-    color: black;
+    color:var(--grey-text);
+}
+
+.fa-phone {
+    color: var(--grey-text);
 }
 
 
@@ -414,7 +425,7 @@ font-weight: 400;
 }
 
 .email {
-    color:var(--grey-text)
+    color:var(--grey-text);
 }
 
 @media (max-width: 600px) {
@@ -443,6 +454,10 @@ font-weight: 400;
         width: 90%
     }
 
+    form {
+        gap: 10px;
+    }
+
     
 
     h1 {
@@ -452,6 +467,21 @@ font-weight: 400;
 
     .header__p {
         max-width: 36%;
+    }
+
+    .about__p {
+        text-align: justify;
+    }
+
+
+    .header-background::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(255,255,2550,0.7);
     }
 
    
